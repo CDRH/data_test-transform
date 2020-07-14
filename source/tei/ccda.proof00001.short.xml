@@ -307,6 +307,16 @@
 
 
         </div2>
+        
+        <div2>
+          <head>ABBR</head>
+          <p> Lorum upsum 
+            <choice>
+              <abbr>SPQR</abbr>
+              <expan>senatus populusque romanorum</expan>
+            </choice>
+          set amet </p>
+        </div2>
 
 
 

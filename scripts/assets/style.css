@@ -41,6 +41,9 @@
 [data-tei-e="figure"] [data-tei-e="p"] {
   font-weight: 800;
 }
+[data-tei-e="figure"] [data-tei-e="head"] {
+  font-size: 1.1em;
+}
 
 [data-tei-e="fw"] {
   text-align: center;
@@ -67,5 +70,14 @@
 
 [data-tei-e="pb"][data-tei-a-facs]::before{
   content: '[' attr(data-tei-a-facs) '] ';
+}
+
+/*  Notes on future alterations */
+
+[data-tei-e-damage] {} /* formatting adds [?] at end */
+
+.tei-list-container [data-tei-e="head"] {
+  font-size: 1.2em;
+  font-weight: 800;
 }
 

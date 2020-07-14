@@ -134,107 +134,283 @@
   </xsl:template>
 
   <xsl:template match="teiHeader" /><!-- do nothing -->
+  
+  <!-- ================
+    Override elements for things that don't have HTML equivelents 
+  =================== -->
+  
+  <xsl:template match="gap" priority="1">
+    <span>
+      <xsl:call-template name="add_attributes" />
+      <xsl:apply-templates />
+      <xsl:text>[</xsl:text>
+      <xsl:value-of select="@reason"/>
+      <xsl:text>]</xsl:text>
+    </span>
+  </xsl:template>
+  
+  <xsl:template match="note" priority="1">
+    <xsl:choose>
+      <xsl:when test="@place = 'foot'">
+        <span>
+          <xsl:call-template name="add_attributes" />
+          <a>
+            <xsl:attribute name="href">
+              <xsl:text>#</xsl:text>
+              <xsl:text>foot</xsl:text>
+              <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+            <xsl:attribute name="id">
+              <xsl:text>body</xsl:text>
+              <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+            
+            <xsl:text>(</xsl:text>
+            <xsl:value-of select="substring(@xml:id, 2)"/>
+            <xsl:text>)</xsl:text>
+          </a>
+        </span>
+      </xsl:when>
+      <xsl:when test="@type = 'editorial'"/>
+      <xsl:otherwise>
+        <div>
+          <xsl:call-template name="add_attributes" />
+          <xsl:apply-templates/>
+        </div>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
   <!-- ===============
     override elements for semantic HTML elements 
   =================== -->
 
-  <xsl:template match="p" priority="1">
-  	<!-- unless inside another p, then span -->
-  	<xsl:choose>
-  		<xsl:when test="ancestor::p">
-  			<span>
-  			  <xsl:call-template name="add_attributes"/>
-          <xsl:apply-templates/>
-  			</span>
-  		</xsl:when>
-  		<xsl:otherwise>
-  			<p>
-  			  <xsl:call-template name="add_attributes"/>
-  			  <xsl:apply-templates/>
-  			</p>
-  		</xsl:otherwise>
-  	</xsl:choose>
-  </xsl:template>
+  <!-- == Content Sectioning == -->
+
+  <!-- <address> -->
+  <!--<article> -->
   
-  <!-- force block level elements -->
+  <!--<div> (force block level elements) -->
   <xsl:template 
     match="div | div1 | div2 | div3 | div4 | div5 | div6 | div7 | body" 
     priority="1">
-        <div>
-          <xsl:call-template name="add_attributes"/>
-          <xsl:apply-templates/>
-        </div>
+    <div>
+      <xsl:call-template name="add_attributes"/>
+      <xsl:apply-templates/>
+    </div>
   </xsl:template>
   
+  <!-- h1 - h6 -->
   <!-- todo: add head number based on div nesting and @type = sub -->
-  <xsl:template 
-    match="head" 
-    priority="1">
+  <xsl:template match="head" priority="1">
     <h2>
       <xsl:call-template name="add_attributes"/>
       <xsl:apply-templates/>
     </h2>
   </xsl:template>
+    
+  <!-- <main> -->
+  <!--<section> -->
+
+  <!-- == Text content == -->
+
+  <!-- <blockquote> and <q> -->
   
-  <xsl:template 
-    match="del" 
-    priority="1">
+  <!--<figure> containing <figcaption> -->
+  <!-- todo: in html figure is not allowed in p, eith alter p or figure -->
+  <xsl:template match="figure" priority="1">
+    <figure>
+      <xsl:call-template name="add_attributes"/>
+      <xsl:apply-templates/>
+    </figure>
+  </xsl:template>
+  
+  <xsl:template match="figDesc" priority="1">
+    <figcaption>
+      <xsl:call-template name="add_attributes"/>
+      <xsl:apply-templates/>
+    </figcaption>
+  </xsl:template>
+  
+  <!--<hr> milestone -->
+  <xsl:template match="milestone" priority="1">
+    <hr>
+      <xsl:call-template name="add_attributes"/>
+      <xsl:apply-templates/>
+    </hr>
+  </xsl:template>
+  
+  <!--<ul><li> --> <!--<ol><li> since TEI lists have to number themselves I have not used <ol> -->
+  <xsl:template match="list" priority="1">
+    <span class="tei-list-container">
+      <!-- move head outside list if there is one -->
+      <xsl:if test="head">
+        <xsl:for-each select="head">
+          <div>
+            <xsl:call-template name="add_attributes"/>
+            <xsl:apply-templates />
+          </div>
+        </xsl:for-each>
+      </xsl:if>
+      <ul>
+        <xsl:call-template name="add_attributes"/>
+        <xsl:apply-templates/>
+      </ul>
+    </span>
+  </xsl:template>
+  
+  <xsl:template match="item" priority="1">
+    <li>
+      <xsl:call-template name="add_attributes"/>
+      <!-- move label inside list item -->
+      <xsl:for-each select="preceding-sibling::label[1]">
+        <span>
+          <xsl:call-template name="add_attributes"/>
+          <xsl:apply-templates/>
+        </span>
+        <xsl:text> </xsl:text>
+      </xsl:for-each>
+      <!-- use n to add numbers -->
+      <xsl:for-each select="@n">
+        <span>
+          <xsl:attribute name="data-tei-a">n</xsl:attribute>
+          <xsl:value-of select="."/>
+          <xsl:text> </xsl:text>
+        </span>
+      </xsl:for-each>
+      <xsl:apply-templates/>
+    </li>
+  </xsl:template>
+  
+  <xsl:template match="list//label" priority="1"/>
+  <xsl:template match="list//head" priority="2"/>
+  
+  
+  <!-- p -->
+  <xsl:template match="p" priority="1">
+    <!-- unless inside another p, then span -->
+    <xsl:choose>
+      <xsl:when test="ancestor::p or descendant::head or descendant::figure or ancestor::list">
+        <span>
+          <xsl:call-template name="add_attributes"/>
+          <xsl:apply-templates/>
+        </span>
+      </xsl:when>
+      <xsl:otherwise>
+        <p>
+          <xsl:call-template name="add_attributes"/>
+          <xsl:apply-templates/>
+        </p>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <!-- == Inline text semantics == -->
+
+  <!-- <a> -->
+  <xsl:template match="xref[@n]">
+    <a>
+      <xsl:attribute name="href" select="@n"/>
+      <xsl:call-template name="add_attributes"/>
+      <xsl:apply-templates/>
+    </a>
+  </xsl:template>
+  
+  <!-- <abbr> -->
+  
+  <xsl:template match="choice[child::abbr]" priority="2">
+    <abbr>
+      <xsl:attribute name="title" select="expan"/>
+      <xsl:call-template name="add_attributes"/>
+      <xsl:apply-templates select="abbr"/>
+    </abbr>
+  </xsl:template>
+
+  
+  <!-- <b> is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. -->
+  
+  <!-- <br> lb -->
+  <xsl:template match="lb">
+    <xsl:apply-templates/>
+    <br/>
+  </xsl:template>
+  
+  <!-- <cite> must contain title -->
+  <!-- <data> -->
+  
+  <!-- <em> can be nested to represent levels of emphasis -->
+  <xsl:template match="hi[@rend = 'italic'] | hi[@rend = 'italics']" priority="1">
+    <em>
+      <xsl:call-template name="add_attributes"/>
+      <xsl:apply-templates/>
+    </em>
+  </xsl:template>
+  
+  <!-- <i> represents a range of text that is set off from the normal text for some reason. -->
+  <!-- <mark> represents text which is marked or highlighted for reference or notation purposes, 
+              due to the marked passage's relevance or importance in the enclosing context. -->
+  <!-- <s> -->
+  <!-- <strong> -->
+  <!-- <sub> -->
+  
+  <!-- <sup> -->
+  <xsl:template match="add[@place = 'superlinear'] | add[@place = 'supralinear']" priority="3">
+    <sup>
+      <add>
+        <xsl:call-template name="add_attributes"/>
+        <xsl:apply-templates/>
+      </add>
+    </sup>
+  </xsl:template>
+  
+  <!-- <time> -->
+  <!--  <u> represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. -->
+
+  <!-- == Image and multimedia == -->
+
+  <!-- <audio> -->
+  
+  <!-- <img> -->
+  <xsl:template match="graphic" priority="1">
+
+    <img>
+      <xsl:attribute name="src">
+        <xsl:text>../../../images/full/</xsl:text>
+        <xsl:value-of select="@url"/>
+      </xsl:attribute>
+    </img>
+  </xsl:template>
+  
+  <!-- <video> -->
+
+  <!-- == Edits == -->
+
+  <!-- del -->
+  <xsl:template match="del" priority="1">
     <del>
       <xsl:call-template name="add_attributes"/>
       <xsl:apply-templates/>
     </del>
   </xsl:template>
   
-  <!-- Content Sectioning -->
+  <!-- <ins> -->
+  <xsl:template match="add" priority="2">
+    <add>
+      <xsl:call-template name="add_attributes"/>
+      <xsl:apply-templates/>
+    </add>
+  </xsl:template>
 
-  <!-- <address>
-  <article>
-  <h1>, <h2>, <h3>, <h4>, <h5>, <h6> DONE
-  <main>
-  <section> -->
-
-  <!-- Text content -->
-
-  <!-- <blockquote> and <q>
-  <figure> containing <figcaption>
-  <hr> milestone
-  <ul><li>
-  <ol><li>
-  <p> DONE -->
-
-  <!-- Inline text semantics -->
-
-  <!-- <a>
-  <abbr>
-  <b> is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance.
-  <br> lb
-  <cite> must contain title
-  <data>
-  <em> can be nested to represent levels of emphasis
-  <i> represents a range of text that is set off from the normal text for some reason.
-  <mark> represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.
-  <s>
-  <strong>
-  <sub>
-  <sup>
-  <time>
-  <u> represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. -->
-
-  <!-- Image and multimedia -->
-
-  <!-- <audio>
-  <img>
-  <video> -->
-
-  <!-- Edits -->
-
-  <!-- <del>  DONE
-  <ins> -->
-
-  <!-- Tables -->
+  <!-- == Tables == -->
 
   <!-- <table> <caption> <thead> <tbody> <tfoot> -->
 
   <!-- see https://developer.mozilla.org/en-US/docs/Web/HTML/Element -->
+  
+  <!-- Notes form formatting.xsl 
+   see DIV1 and DIV2 re @corresp
+   language can be on any element, perhaps use family letters as an example to get that applied
+  -->
+  
+  
 </xsl:stylesheet>

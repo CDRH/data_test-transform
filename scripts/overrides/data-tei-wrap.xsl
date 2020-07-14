@@ -9,6 +9,7 @@
   <xsl:import href="data-tei.xsl"/>
 
   <xsl:template match="TEI">
+    <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
     <html>
       <head>
         <title><!-- todo: add title --></title>
