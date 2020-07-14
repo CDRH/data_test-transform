@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://cather.unl.edu/cat.letters.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Willa Cather to Margaret Cather, [July 12, 1938]</title>
+                <title type="sub">electronic edition</title>
+                <author key="Cather, Willa">Willa Cather</author>
+                <editor role="co-editor" xml:id="awj">Andrew Jewell</editor>
+                <editor role="co-editor" xml:id="ja_st">Janis Stout</editor>
+                <editor role="associate_editor" xml:id="me_ho">Melissa Homestead</editor>
+                <respStmt>
+                    <resp>Editorial Assistant</resp>
+                    <name xml:id="ga_ki">Gabi Kirilloff</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editorial Assistant</resp>
+                    <name xml:id="ca_be">Caterina Bernardini</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editorial Assistant</resp>
+                    <name xml:id="sa_gr">Samantha Greenfield</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editorial Assistant</resp>
+                    <name xml:id="em_ra">Emily Rau</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>The Willa Cather Archive</authority>
+                <idno>cat.let2356</idno>
+                <address>
+                    <addrLine>https://cather.unl.edu</addrLine>
+                </address>
+                <publisher>University of Nebraska–Lincoln</publisher>
+                <distributor>
+                    <name>Center for Digital Research in the Humanities</name>
+                    <address>
+                        <addrLine>319 Love Library</addrLine>
+                        <addrLine>University of Nebraska–Lincoln</addrLine>
+                        <addrLine>Lincoln, NE 68588-4100</addrLine>
+                        <addrLine>http://cdrh.unl.edu</addrLine>
+                    </address>
+                </distributor>
+                <date>2018</date>
+                <availability>
+                    <p>The Willa Cather Archive is freely distributed by the Center for Digital
+                        Research in the Humanities at the University of Nebraska-Lincoln and
+                        licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0
+                        United States License</p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="m">The Complete Letters of Willa Cather</title>
+                <editor role="co-editor" sameAs="#awj"/>
+                <editor role="co-editor" sameAs="#ja_st"/>
+                <editor role="associate_editor" sameAs="#me_ho"/>
+            </seriesStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>Willa Cather</author>
+                    <persName type="addressee" target="psn:0197">Margaret Cather</persName>
+                    <date when="1938-07-12">[July 12, 1938]</date>
+                    <note type="date">Although Cather wrote "May 12" on this letter, the postmark
+                        and content indicate that she wrote that date in error and that the letter
+                        was written on July 12.</note>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <repository target="rep:001">University of Nebraska–Lincoln, Archives and
+                            Special Collections</repository>
+                        <collection>Roscoe and Meta Cather Collection </collection>
+                        <idno type="collection">MS316</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>Document is three leaves, handwritten on recto only of first and second
+                            leaves and on recto and verso of third leaf. Includes one envelope,
+                            handwritten.</p>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <extent>
+                                    <measure type="composition" unit="leaf" quantity="3">3
+                                        leaves</measure>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc hands="1">
+                            <handNote xml:id="wc_hand" medium="pen">Willa Cather
+                                handwritten</handNote>
+                        </handDesc>
+                        <accMat><note type="envelope">Includes one envelope,
+                            handwritten.</note></accMat>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate when="1938-07-12">[July 12, 1938]</origDate>
+                            <origPlace>
+                                <placeName target="geo:0199">St. John, NB, Canada</placeName>
+                            </origPlace>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <hyphenation eol="some">
+                    <p>End-of-line hyphenation silently removed where appropriate.</p>
+                </hyphenation>
+                <normalization method="markup">
+                    <p>Typographical or spelling irregularities in the original have been noted
+                        using markup. Over-typed characters, where the typist has re-keyed the
+                        proper character over the top of a mis-typed character, have not been noted
+                        in the markup.</p>
+                </normalization>
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="psn" matchPattern="([0-9]{4})"
+                    replacementPattern="cat.let.personography.xml#$1">
+                    <p> Private URIs using the <code>psn</code> prefix are pointers to
+                            <gi>person</gi> elements in the cat.let.personography.xml file. For
+                        example, <code>psn:2365</code> dereferences to
+                            <code>cat.let.personography.xml#2365</code>. </p>
+                </prefixDef>
+                <prefixDef ident="wrk" matchPattern="([0-9]{4})"
+                    replacementPattern="cat.let.works.xml#$1">
+                    <p> Private URIs using the <code>wrk</code> prefix are pointers to <gi>bibl</gi>
+                        elements in the cat.let.works.xml file. For example, <code>wrk:1342</code>
+                        dereferences to <code>cat.let.works.xml#1342</code>. </p>
+                </prefixDef>
+                <prefixDef ident="geo" matchPattern="([0-9]{4})"
+                    replacementPattern="cat.let.gazetteer.xml#$1">
+                    <p> Private URIs using the <code>geo</code> prefix are pointers to
+                            <gi>place</gi> elements in the cat.let.gazetteer.xml file. For example,
+                            <code>geo:0023</code> dereferences to
+                            <code>cat.let.gazetteer.xml#0023</code>. </p>
+                </prefixDef>
+                <prefixDef ident="rep" matchPattern="([0-9]{4})"
+                    replacementPattern="cat.let.repositories.xml#$1">
+                    <p> Private URIs using the <code>rep</code> prefix are pointers to
+                            <gi>repository</gi> elements in the cat.let.repositories.xml file. For
+                        example, <code>rep:1020</code> dereferences to
+                            <code>cat.let.repositories.xml#1020</code>. </p>
+                </prefixDef>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2015-10-08" who="#sa_gr">First round of XML revision</change>
+            <change when="2015-04-17" who="#em_ra">Initial creation of XML from non-XML electronic
+                files</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <graphic url="cat.let2356.001"/>
+        </surface>
+        <surface>
+            <graphic url="cat.let2356.002"/>
+        </surface>
+        <surface>
+            <graphic url="cat.let2356.003"/>
+        </surface>
+        <surface>
+            <graphic url="cat.let2356.004"/>
+        </surface>
+        <surface type="envelope">
+            <graphic url="cat.let2356.005"/>
+        </surface>
+        <surface type="envelope">
+            <graphic url="cat.let2356.006"/>
+        </surface>
+    </facsimile>
+    <text>
+        <group>
+            <text type="envelope">
+                <body>
+                    <div type="front" facs="cat.let2356.005">
+                        <div type="return">
+                            <ab type="printed"><address>
+                                    <addrLine>Admiral Beatty Hotel</addrLine>
+                                    <addrLine>SAINT JOHN, NEW BRUNSWICK</addrLine>
+                                    <addrLine>CANADA</addrLine>
+                                </address></ab>
+                        </div>
+                        <div type="addressee">
+                            <ab>
+                                <address>
+                                    <addrLine><add hand="#unknown_hand">754 Oak
+                                        Street</add></addrLine>
+                                    <addrLine><add hand="#unknown_hand"><placeName target="geo:0053"
+                                                >Colusa</placeName></add></addrLine>
+                                    <addrLine><persName target="psn:0197">Miss Margaret
+                                            Cather</persName></addrLine>
+                                    <addrLine><del rend="strikethrough">Villa–Riviera
+                                        Hotel</del></addrLine>
+                                    <addrLine><del rend="strikethrough"><placeName target="geo:0113"
+                                                >Long Beach</placeName></del></addrLine>
+                                    <addrLine>California</addrLine>
+                                </address>
+                            </ab>
+                        </div>
+                        <div type="postmark">
+                            <ab>
+                                <placeName target="geo:0199">SAINT JOHN, N.B. CANADA</placeName>
+                                <date when="1938-07-13">JUL 13 1938</date>
+                                <time when="11:00:00">11</time>
+                            </ab>
+                        </div>
+                        <div type="postmark">
+                            <ab>
+                                <placeName target="geo:0113">LONG BEACH CALIF.</placeName>
+                                <date when="1938-07-18">JUL 18 1938</date>
+                                <time when="16:30:00">430 PM</time>
+                            </ab>
+                        </div>
+                    </div>
+                    <div type="back" facs="cat.let2356.006">
+                        <ab type="printed">NOTICE <lb/>LETTERS MAILED IN HOTEL ENVELOPES <lb/>IF NOT
+                            DELIVERED, ARE SENT TO THE DEAD LETTER OFFICE <lb/>UNLESS THE WRITER
+                            GIVES A RETURN ADDRESS. <lb/>IF NOT DELIVERED IN__DAYS, RETURN TO</ab>
+                    </div>
+                </body>
+            </text>
+            <text>
+                <body>
+                    <pb facs="cat.let2356.001"/>
+                    <fw type="letterhead" place="top">Admiral Beatty Hotel<lb/>OPERATED
+                        BY<lb/>ADMIRAL BEATTY HOTEL COMPANY LTD.<lb/>SAINT JOHN, N.B.</fw>
+                    <opener>
+                        <dateline><date when="1938-05-12">May 12</date></dateline>
+                        <salute>My Darling <persName target="psn:0197">Margaret</persName>;</salute>
+                    </opener>
+                    <p><persName target="psn:0560">We</persName> are here in <placeName
+                            target="geo:0199">the old town</placeName> again—great showers of rain
+                        and bitter cold. We left <placeName target="geo:0137">New York</placeName>
+                        in intense heat, both of us exhausted by packing. Here we will shop a little
+                        and rest in bed a great deal. So many hard and <ref type="annotation"
+                            target="001523">sad things</ref> have come down on me in the last six
+                        weeks that I am rather <pb facs="cat.let2356.002"/>
+                        <fw type="letterhead" place="top">Admiral Beatty Hotel<lb/>OPERATED
+                            BY<lb/>ADMIRAL BEATTY HOTEL COMPANY LTD.<lb/>SAINT JOHN, N.B.</fw> a
+                        wreck. I didn't quite know whether I could take the noon train for
+                            <placeName target="geo:0028">Boston</placeName> on Sunday. Just as I was
+                        putting on my hat to take the cab, a box of great gardenias dropped down
+                        into my lap <del rend="strikethrough"><gap reason="illegible"/></del> sent
+                        by <persName target="psn:0651">Yehudi</persName>'s darling little new
+                            <persName target="psn:0710">wife</persName> with such a tender message.
+                            <del rend="strikethrough">inside</del> Somehow it did hearten me. I
+                        can't feel utterly knocked out so long as the young love <del
+                            rend="strikethrough">we</del> me. Nola is just the right wife for my
+                        boy,—and just <pb facs="cat.let2356.003"/>
+                        <fw type="letterhead" place="top">Admiral Beatty Hotel<lb/>OPERATED
+                            BY<lb/>ADMIRAL BEATTY HOTEL COMPANY LTD.<lb/>SAINT JOHN, N.B.</fw> the
+                        kind no one would ever have selected for him. I am hard to please, and I was
+                        very jealous <emph rend="underline">for</emph> Yehudi. I might have thought
+                        she <del rend="strikethrough">wasn't</del> wasn't brilliant or picturesque
+                        enough for him. But he sees the souls of people—that is his peculiar gift.
+                        She is the right one.</p>
+                    <p>Dear child, I was and am so glad <persName target="psn:0199">your kind
+                            mother</persName> thought of giving me a little place in <del
+                            rend="strikethrough">D</del> the service for <persName target="psn:0182"
+                            >Douglass</persName> by having that first <pb facs="cat.let2356.004"/>
+                        <name target="wrk:0807">dedication</name> read. It would never have been
+                            <ref type="annotation" target="007218">taken out</ref> if it hadn't been
+                        such very weak verse. But I'm glad I wrote it and felt it, if it is poor
+                        verse, and glad that <persName target="psn:0200">we three</persName> loved
+                        each other so dearly in our youth and always, though it breaks my heart now,
+                        and it seems to me that I never can <del rend="strikethrough">care</del>
+                        care very much about living again.</p>
+
+                    <p>Give a warm and loving greeting to <persName target="psn:0185"
+                            >Elizabeth</persName> when you write<choice>
+                            <sic/>
+                            <corr>.</corr>
+                        </choice>
+                    </p>
+                    <closer>
+                        <salute>Lovingly</salute>
+                        <signed>W.</signed>
+                    </closer>
+                </body>
+            </text>
+        </group>
+    </text>
+</TEI>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://digitalhumanities.unl.edu/resources/schemas/tei/TEIP5.3.6.0/tei_all.rng"  type="xml"?>
+
+<TEI xml:id="ccda.proof00001" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">The Marrow of Tradition</title>
+        <title type="sub">Galley Proof</title>
+        <author xml:id="cwc">Chesnutt, Charles W. (Charles Waddell), 1858-1932</author>
+        <principal xml:id="spb">Browner, Stephanie P.</principal>
+        <principal xml:id="kmp">Price, Kenneth M.</principal>
+        <principal xml:id="mc">Cohen, Matt</principal>
+        <respStmt>
+          <resp>Scanning, Optical Character Recognition, Proofreading, and Encoding</resp>
+          <name xml:id="lkw">Laura K. Weakly</name>
+          <name xml:id="amm">Ashley M. Morrison</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcribing, Encoding, Proofing</resp>
+          <name xml:id="as">Ashlyn Stewart</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <date>2019</date>
+        </edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority xml:id="ccda">The Charles Chesnutt Digital Archive</authority>
+        <publisher>University of Nebraska-Lincoln</publisher>
+        <distributor>
+          <name>Center for Digital Research in the Humanities</name>
+          <address>
+            <addrLine>319 Love Library</addrLine>
+            <addrLine>University of Nebraska&#8211;Lincoln</addrLine>
+            <addrLine>Lincoln, NE 68588-4100</addrLine>
+            <addrLine>cdrh@unlnotes.unl.edu</addrLine>
+          </address>
+        </distributor>
+        <pubPlace>Lincoln, Nebraska</pubPlace>
+        <address>
+          <addrLine>University of Nebraska-Lincoln</addrLine>
+          <addrLine>Lincoln, NE 68588-4100</addrLine>
+        </address>
+        <idno />
+        <availability>
+          <p />
+        </availability>
+      </publicationStmt>
+
+      <notesStmt>
+        <note />
+      </notesStmt>
+
+      <sourceDesc>
+
+        <bibl>
+          <author>Chesnutt, Charles W. (Charles Waddell), 1858-1932</author>
+          <title level="m" type="main">The Marrow of Tradition</title>
+          <title level="m" type="sub">Galley Proof</title>
+          <date />
+          <biblScope unit="page" />
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <repository />
+            <collection />
+            <idno />
+          </msIdentifier>
+        </msDesc>
+
+      </sourceDesc>
+    </fileDesc>
+
+    <profileDesc>
+      <textClass>
+        <keywords n="category" scheme="original">
+          <term>Galley Proofs</term>
+        </keywords>
+        <keywords n="subcategory" scheme="original">
+          <term />
+        </keywords>
+        <keywords n="keywords" scheme="lcsh">
+          <term />
+        </keywords>
+      </textClass>
+      <handNotes>
+        <handNote medium="blue pencil" resp="#cwc" xml:id="h01" />
+        <handNote medium="pencil" resp="#cwc" xml:id="h02" />
+        <handNote medium="black pen" resp="#cwc" xml:id="h03" />
+        <handNote medium="printed type" resp="#unk" scope="base" xml:id="h04"><persName xml:id="unk"
+            >Unknown</persName></handNote>
+      </handNotes>
+      <particDesc>
+        <person />
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2019-09-10" who="#as">transcribed and encoded</change>
+      <change when="2019-07-31" who="#amm">tei encoding</change>
+    </revisionDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div1 type="galley">
+        <div2 type="chapter">
+          <pb facs="ccda.proof00001.001.jpg" />
+
+          <fw>1</fw>
+
+          <note hand="#h03">Chas. W. Chesnutt,</note>
+
+          <head>THE MARROW OF TRADITION</head>
+          <head type="sub">I AT BREAK OF DAY</head>
+          <p>"Stay here beside her, Major. I shall not be needed for an hour yet. Meanwhile I'll go
+            downstairs and snatch a bit of sleep, or talk to old Jane."</p>
+          <p>The night was hot and sultry. 
+            <!-- added for testing p in p -->
+            <figure><p>zzz Figure Description</p></figure>
+            Though the windows of the chamber were wide open, and the
+            muslin curtains looped back, not a breath of air was stirring, Only the shrill chirp of
+            the cicanda and the muffled croaking of the frogs in some distant marsh broke the night
+            silence. The heavy scent of magnolias, overpowering even the strong smell of drugs in
+            the sick-room, suggested death and funeral wreaths, sorrow and tears, the long home, the
+            last sleep<subst
+              hand="#h01">
+              <del rend="overstrike underline">-</del>
+              <add place="margin-left" rend="circle">.</add>
+            </subst> The major shivered with apprehension as the slender hand which he held in his
+            own contracted nervously and in a spasm of pain clutched his own fingers with a v<hi
+              hand="#h01" rend="underline">ic</hi>e-like grip.</p>
+          <p>Major Carteret, though dressed in brown linen, had thrown off his coat for greater
+            comfort. The stifling heat, in spite of the palm-leaf fan which he plied mechanically,
+            was scarcely less oppressive than his own thoughts. Long ago, while yet a mere boy in
+            years, he had come back <unclear
+              reason="ripped">from</unclear> Appomattox, to find his family, one of the oldest and
+            proudest in the State, <pb />
+            <fw>2 THE MARROW OF TRADITION</fw> hopelessly impoverished by the war, even their
+            ancestral home swallowed up in the common ruin. His elder brother had sacrificed his
+            life on the bloody altar of the lost cause, and his father, broken and chagrined, died
+            not many years later, leaving the major the last of his line. He had tried in various
+            pursuits to gain a foothold in the new life, but with indifferent success until he won
+            the hand of Olivia Merkell, whom he had seen grow from a small girl to glorious
+            womanhood. With her money he had founded the Morning Chronicle, which he had made the
+            leading organ of his party and the most influential paper in the State. The fine old
+            house in which they lived was hers. In this very room he had first drawn the breath of
+            life; it had been their nuptial chamber; and here, too, within a few hours, she might
+            die, for it seemed impossible that one could long endure such frightful agony and
+            live.</p>
+
+          <pb />
+
+          <fw>AT BREAK OF <!-- ***NEED to make "supplied" --><supplied resp="#ccda"
+            >DAY</supplied> 3</fw>
+          <p>Dr. Price went downstairs to the library, where a dim light was burning. An old black
+            woman, dressed in a gingham frock, with a red bandana handkerchief coiled around her
+            head by way of turban, was seated by an open window. She rose and curtsied as the doctor
+            entered and dropped into a willow rocking-chair near her own.</p>
+          <p>"How did this happen, Jane?" he asked in a subdued voice, adding <add hand="#h01"
+              place="inline">
+              <metamark function="add" target="#a001">&#8248;</metamark>
+            </add>
+            <add hand="#h01" place="inline">
+              <metamark function="add" target="#a001">,</metamark>
+              <metamark function="emphasize" target="#a001">/</metamark>
+            </add> with assumed severity, " <subst hand="#h01">
+              <del rend="overstrike">y</del>
+              <add place="margin-left" xml:id="s001">Y<metamark function="emphasize" target="s001"
+                  >/</metamark></add>
+            </subst>ou ought to have taken better care of your mistress."</p>
+          <p>"Now look a-hyuh, Doctuh Price," returned the old woman in an unetuous whisper, "you
+            don' wan' ter come talkin' none er yo' foolishness 'bout my not takin' keer er Mis'
+            'Livy. <hi
+              rend="italic">She</hi> never would 'a' said sech a thing! <subst hand="#h01">
+              <del rend="overstrike">Jes' seven months ago dis day,</del>
+              <add place="margin-bottom" rend="marked">Seven er eight mont's ago,</add>
+            </subst> w'en she sent fer me, I <subst hand="#h01" rend="marked">
+              <del rend="overstrike">sez</del>
+              <add place="margin-left" xml:id="a016">says</add>
+            </subst> ter her <del rend="overstrike">sez</del><add sameAs="#a016" />I:&#8212;</p>
+          <p>"'Lawd, Lawd, honey! You don' tell me dat after all dese long w'ary years er waitin' de
+            Good Lawd is done heared yo' prayer an' is gwine ter sen' you de chile you be'n wantin'
+            so long an' so bad? Bless his holy name! Will I come an' nuss yo' baby? Why, honey, I
+            nussed you, an' nussed yo' mammy thoo her las' sickness, an' laid her out w'en she died.
+            I would n' <hi
+              rend="italic"
+            >let</hi> nobody e'se nuss yo' baby; an' mo'over, I'm gwine ter come an'
+            nuss you too. You 're young side er me, Mis' 'Livy, but you're ove'ly ole ter be havin'
+            yo' fus' baby, an' you 'll need somebody roun', honey, w'at knows all 'bout de fam'ly,
+            an' dey ways an' dey weaknesses, an I don' know who dat'd be if it wa'n't me.'</p>
+          <p>"''Deed, Mammy Jane,' <subst hand="#h01">
+              <del rend="overstrike">sez</del>
+              <add place="margin-left">says</add>
+            </subst> she, 'dey ain' nobody e'se I'd have but you. You kin come ez soon as you wanter
+            an' stay ez long ez you mineter.'</p>
+          <p>"An hyuh I is, an' <subst hand="#h01">
+              <del rend="overstrike">here</del>
+              <add place="margin-left">hyuh</add>
+            </subst> I'm gwine ter stay. Fer <pb />
+            <fw>4 THE MARROW OF TRADITION</fw> Mis' 'Livy is my ole mist'ess's daughter, an' my ole mist'ess<del
+              hand="#h01" rend="overstrike" xml:id="d001">,</del><add hand="#h01"
+              place="margin-right"><metamark function="delete" target="d001"
+            >&#977;</metamark></add> wuz good ter me, an' dey ain' none er her
+            folks gwine ter suffer ef ole Jane kin he'p it."</p>
+          <p>"Your loyalty does you credit, Jane," observed the doctor, "but you have n't told me
+            yet what happened to Mrs. Carteret to-day. Did the horse run away, or did she see
+            something that frightened her?"</p>
+          <p>"No, suh, de hoss did n' git skeered at nothin,' but Mis' 'Livy did see somethin', er
+            somebody; an' it wa'n't no fault er mine ner her'n neighter&#8212;it goes fu'ther back<subst
+              hand="#h01">
+              <del rend="overstrike">'</del>
+              <add place="margin-right" xml:id="s002">,<metamark function="emphasize" target="#e001"
+                  >/</metamark></add>
+            </subst> suh, fu'ther dan dis day er dis year. Does you 'member de time w'en my ole
+            mist'ess, Mis' 'Livy upstairs's mammy, died? No? Well, you wuz prob'ly 'way ter school
+            den, studyin' ter be a doctuh. But I'll tell you all erbout it.</p>
+          <p>"W'en my ole mist'ess, Mis' 'Lis'beth Merkell&#8212;an' a good mist'ess she
+            wuz&#8212;tuck sick fer de las' time, her sister Polly&#8212;ole Mis' Polly Ochiltree
+            w'at is now&#8212;come ter de house ter he'p nuss her. Mis' 'Livy upstairs yander wuz
+            erbout six years ole den, de sweetes' little angel you ever laid eyes on; an' on her
+            dyin' bed Mis' 'Liz'beth ax' Mis' Polly fer ter stay here an' take keer er her chile,
+            an' Mis' Polly she promise'. She wuz a widder fer de secon' time, an' did n' have no
+            child'en, an' could jes' as well come as not.</p>
+          <p>"But dere wuz trouble after de fune'al, an' it happen' right <subst hand="#h01">
+              <del rend="overstrike">here</del>
+              <add place="margin-left">hyuh</add>
+            </subst> in dis lib'ary. Mars Sam wuz settin' by de table, w'en Mis' Polly come
+            downstairs, slow an' solemn, an' stood dere in de middle er de flo', all in black, till
+            Mars Sam sot a cheer fer her.</p>
+          <p>"'Well, Samuel,' says she, 'now dat we 've done all we can fer po' 'Lizbeth, it only
+            'mains fer us ter consider Olivia's future.'</p>
+
+
+          <pb facs="ccda.proof00001.002.jpg" />
+          <fw>AT BREAK OF DAY 5</fw>
+          <p>"Mars Sam nodded his head, but did n' say nothin'.</p>
+          <p>"'I don' need ter tell you,' says she, 'dat I am willin' ter carry out de wishes <subst
+              hand="#h01">
+              <del rend="overstrike">of</del>
+              <add place="margin-left">er</add>
+            </subst> my dead sister, an' sac'ifice my own comfo't, an' make myse'f yo' house-keeper
+            an' yo' child's nuss, fer my dear sister's sake. It wuz her dyin' wish, an' on it I will
+            ac', ef it is also yo'n.'</p>
+          <p>"Mars Sam did n' want Mis' Polly ter come, suh; fur he did n' like Mis' Polly. He wuz
+            skeered er Miss Polly."</p>
+          <p>"I don't wonder," yawned the doctor, "if she was anything like she is now."</p>
+          <p>"Wuss, suh, fer she wuz younger, an' stronger. She always would have her say, no matter
+            'bout what, an' her own way, no matter who 'posed her. She had already be'n in de house
+            fer a week, an' Mars Sam knowed ef she once come ter stay she 'd be de mist'iss of
+            eve'ybody in it an' him too. But w'at could he do but say yas?</p>
+          <p>"'Den it is unde'stood, is it,' says Mis' Polly, w'en he had spoke', 'dat I am ter take
+            cha'ge er de house?'</p>
+          <p>"'All right Polly,' says Mars Sam, wid a deep sigh.</p>
+          <p>"Mis' Polly 'lowed he wuz sighin' fer my po' dead mist'<subst hand="#h01">
+              <del rend="overstrike">i</del>
+              <add place="margin-left" xml:id="s003">e<metamark function="emphasize" target="#s003"
+                  >/</metamark></add>
+            </subst>ss, fer she did n' have no idee er his feelin's to'ds her&#8212;she alluz did
+            'low dat all de gent'emen wuz in love wid 'er.</p>
+          <p>"'You won' fin' much ter do,' Mars Sam went on, 'fer Julia is a good housekeeper, an'
+            kin ten' ter mos' eve'ything, under yo' d'rections.'</p>
+          <p>" Mis' Polly stiffen up like a ramrod. 'It mus' be unde'stood, Samuel,' says she, 'dat
+            w'en I 'sumes cha'ge er yo' house, dey ain' gwine ter be no 'vided 'sponsibility; an' as
+            fer dis Julia, me an' her could n' git 'long tergether nohow. Ef I stays, Julia
+            goes.'</p>
+
+
+          <fw>6 THE MARROW OF TRADITION</fw>
+          <p>"W'en Mars Sam heared dat, he felt better, an' 'mence' ter pick up his courage. Mis'
+            Polly had showed her han' too plain. My mist'<subst
+              hand="#h01">
+              <del rend="overstrike">i</del>
+              <add place="margin-left" xml:id="s004">e<metamark function="emphasize" target="#s004"
+                  >/</metamark></add>
+            </subst>ss had n' got col' yit, an' Mis' Polly, who 'd be'n a widder fer two years dis
+            las' time, wuz already fig'rin' on takin' her place fer good, an' she did n' want no
+            other woman roun' de house dat Mars Sam might take a' intrus' in.</p>
+          <p>"'My dear Polly,' <subst hand="#h01">
+              <del rend="overstrike">sez</del>
+              <add place="margin-left">says</add>
+            </subst> Mars Sam, quite determine', 'I could n' possibly sen' Julia 'way. Fac' is, I
+            could n' git 'long widout Julia. She had be'n runnin' dis house like clockwo'k befo' you
+            come, an' I likes her ways. My dear, dead 'Liz'beth sot a heap er sto' by Julia, an' I'm
+            gwine ter keep her here fer 'Liz'beth's sake.'</p>
+          <p>"Mis' Polly's eyes flash<add hand="#h01" place="inline"><metamark function="add"
+                target="#a002">&#8248;</metamark></add>
+            <add place="margin-right" xml:id="a002">,<metamark function="add" target="a002"
+                >&#711;</metamark></add> fire.</p>
+          <p>"'Ah,' <subst hand="#h01">
+              <del rend="overstrike">sez</del>
+              <add place="margin-left">says</add>
+            </subst> she, 'I see&#8212;I see! You perfers her housekeepin' ter mine, indeed! Dat is
+            a fine way ter talk ter a lady! An' a heap er rispec' you is got fer de mem'ry er my po'
+            dead sister!'</p>
+          <p>"Mars Sam knowed w'at she 'lowed she seed wa'n't so; but he did n' let on, fer it only
+            made him de safer. He wuz willin' fer her ter 'magine w'at she please', jes' so long ez
+            she kep' out er his house an' let him alone.</p>
+          <p>"'No, Polly,' sezee, gittin' bolder ez she got madder, 'dey ain' no use talkin'.
+            Nothin' in de worl' would make me part wid Julia.'</p>
+          <p>"Mis' Polly she r'ared an' she pitch', but Mars Sam helt on like grim death. Mis' Polly
+            would n' give in neither, an' so she fin'ally went away. Dey made some kind er
+            'rangement afterwa'ds, an' Miss Polly tuck Mis' 'Livy ter her own house. Mars Sam paid
+            her bo'd an' 'lowed Mis' Polly somethin' fer takin' keer er her."</p>
+          <p>"And Julia stayed?"</p>
+
+
+        </div2>
+
+
+
+
+
+
+      </div1>
+    </body>
+
+  </text>
+
+</TEI>

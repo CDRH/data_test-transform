@@ -1,0 +1,190 @@
+list of files to create a sample set out of
+
+cather letters
+let2356   DONE
+let2340   DONE
+
+
+childlit
+har1880.2007.001.xml   DONE - regularization of speech and personography for plays in header
+
+lewis and clark
+lc.jrn.1804-1805.winter.part6   DONE - weird table stuff
+
+chesnutt
+ccda.proof00001.xml   DONE - in progress, but has a lot of complex stuff
+
+
+
+
+<html>
+  <head/>
+  <body>
+    <!-- ============== -->
+    <!--      TEI       -->
+    <!-- ============== -->
+    <div xml:id="chap01" n="1" type="chapter">
+      <head>Chapter 1. </head>
+      <p>
+        <seg>
+          <said who="aus.001.nar" direct="true" aloud="false">
+            <hi rend="sc(1)">It</hi> is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.</said>
+        </seg>
+      </p>
+      <p>
+        <seg>
+          <said who="aus.001.nar" direct="true" aloud="false">However little known the feelings or views of such a man may be on his first entering a
+            neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or
+            other of their daughters.</said>
+        </seg>
+      </p>
+    </div>
+    <!-- ============== -->
+    <!--      HTML      -->
+    <!-- ============== -->
+    <div data-tei-element="div" data-tei-xml:id="chap01" data-tei-n="1" data-tei-type="chapter">
+      <div data-tei-element="head">Chapter 1. </div>
+      <p>
+        <div data-tei-element="seg">
+          <div data-tei-element="said" data-tei-who="aus.001.nar" data-tei-direct="true" data-tei-aloud="false">
+            <div data-tei-element="hi" data-tei-rend="sc(1)">It</div> is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.</div>
+          </div>
+        </p>
+        <p>
+          <div data-tei-element="seg">
+            <div data-tei-element="said" data-tei-who="aus.001.nar" data-tei-direct="true" data-tei-aloud="false">However little known the feelings or views of such a man may be on his first entering a
+            neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or
+            other of their daughters.</div>
+          </div>
+        </p>
+     </div>
+  </body>
+</html>
+
+<xsl:variable name="attribute_prefix">data-tei-</xsl:variable>
+
+<xsl:template name="make_xml">
+  <xsl:with-param name="element"/>
+  <!-- write: code from data_chesnutt -->
+</xsl:template>
+
+<xsl:template name="add_attributes">
+  <xsl:with-param name="values"/>
+
+  <xsl:variable name="local_xml">
+
+    <!-- write: call stuff from TEI header needed for processing author, hands, etc -->
+
+    <xsl:call-template name="make_xml">
+      <xsl:with-param name="element"><xsl:value-of select="$values"/></xsl:with-param>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <!-- add element as attribute -->
+  <xsl:value-of select="$attribute_prefix"/>
+  <xsl:text>element="</xsl:text>
+  <xsl:value-of select="name()"/>  
+  <xsl:text>" </xsl:text>
+
+  <!-- add each attribute as data attribute -->
+
+  <!-- write: choose to handle hands and other exceptions first -->
+
+  <xsl:for-each "@type='attribute'">
+    <xsl:value-of select="$attribute_prefix"/>
+    <xsl:value-of select="name()"/>
+    <xsl:text>="</xsl:text>
+    <xsl:value-of select="value()"/>
+    <xsl:text>" </xsl:text>
+    </xsl:for-each>
+</xsl:template>
+
+<!-- Generic template for all elements -->
+<xsl:template match="body/*" priority="2">
+  <span>
+    <xsl:call-template name="add_attributes">
+      <xsl:with-param name="values">
+        <xsl:copy-of select="."/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </span>
+</xsl:template>
+
+<!-- override elements for semantic HTML elements -->
+
+<xsl:template match="p" priority="1">
+  <!-- unless inside another p, then span -->
+  <xsl:choose>
+    <xsl:when select="ancestor::p">
+      <span>
+        <xsl:call-template name="add_attributes">
+          <xsl:with-param name="values">
+            <xsl:copy-of select="."/>
+          </xsl:with-param>
+        </xsl:call-template>
+      </div>
+    </xsl:when>
+    <xsl:otherwise>
+      <p>
+        <xsl:call-template name="add_attributes">
+          <xsl:with-param name="values">
+            <xsl:copy-of select="."/>
+          </xsl:with-param>
+        </xsl:call-template>
+      </div>
+    </xsl:otherwise>
+</xsl:template>
+
+<!-- Content Sectioning -->
+
+<address>
+<article>
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+<main>
+<section>
+
+<!-- Text content -->
+
+<blockquote> and <q>
+<figure> containing <figcaption>
+<hr> milestone
+<ul><li>
+<ol><li>
+<p>
+
+<!-- Inline text semantics -->
+
+<a>
+<abbr>
+<b> is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance.
+<br> lb
+<cite> must contain title
+<data>
+<em> can be nested to represent levels of emphasis
+<i> represents a range of text that is set off from the normal text for some reason.
+<mark> represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.
+<s>
+<strong>
+<sub>
+<sup>
+<time>
+<u> represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation.
+
+<!-- Image and multimedia -->
+
+<audio>
+<img>
+<video>
+
+<!-- Edits -->
+
+<del>
+<ins>
+
+<!-- Tables -->
+
+<table> <caption> <thead> <tbody> <tfoot>
+
+<!-- see https://developer.mozilla.org/en-US/docs/Web/HTML/Element -->
+
+

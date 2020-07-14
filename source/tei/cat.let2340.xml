@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://cather.unl.edu/cat.letters.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Willa Cather to Elizabeth Cather and Margaret Cather, August 12
+                    [1936]</title>
+                <title type="sub">electronic edition</title>
+                <author key="Cather, Willa">Willa Cather</author>
+                <editor role="co-editor" xml:id="awj">Andrew Jewell</editor>
+                <editor role="co-editor" xml:id="ja_st">Janis Stout</editor>
+                <editor role="associate_editor" xml:id="me_ho">Melissa Homestead</editor>
+                <respStmt>
+                    <resp>Editorial Assistant</resp>
+                    <name xml:id="ga_ki">Gabi Kirilloff</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editorial Assistant</resp>
+                    <name xml:id="ca_be">Caterina Bernardini</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editorial Assistant</resp>
+                    <name xml:id="sa_gr">Samantha Greenfield</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editorial Assistant</resp>
+                    <name xml:id="em_ra">Emily Rau</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>The Willa Cather Archive</authority>
+                <idno>cat.let2340</idno>
+                <address>
+                    <addrLine>https://cather.unl.edu</addrLine>
+                </address>
+                <publisher>University of Nebraska–Lincoln</publisher>
+                <distributor>
+                    <name>Center for Digital Research in the Humanities</name>
+                    <address>
+                        <addrLine>319 Love Library</addrLine>
+                        <addrLine>University of Nebraska–Lincoln</addrLine>
+                        <addrLine>Lincoln, NE 68588-4100</addrLine>
+                        <addrLine>http://cdrh.unl.edu</addrLine>
+                    </address>
+                </distributor>
+                <date>2018</date>
+                <availability>
+                    <p>The Willa Cather Archive is freely distributed by the Center for Digital
+                        Research in the Humanities at the University of Nebraska-Lincoln and
+                        licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0
+                        United States License</p>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="m">The Complete Letters of Willa Cather</title>
+                <editor role="co-editor" sameAs="#awj"/>
+                <editor role="co-editor" sameAs="#ja_st"/>
+                <editor role="associate_editor" sameAs="#me_ho"/>
+            </seriesStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>Willa Cather</author>
+                    <persName type="addressee" target="psn:0185 psn:0197">Elizabeth Cather and
+                        Margaret Cather</persName>
+                    <date when="1936-08-12">August 12 [1936]</date>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <repository target="rep:001">University of Nebraska–Lincoln, Archives and
+                            Special Collections</repository>
+                        <collection>Roscoe and Meta Cather Collection </collection>
+                        <idno type="collection">MS316</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <p>Document is two leaves, handwritten on recto and verso of first leaf and
+                            recto only of second leaf. Includes one envelope, handwritten. Includes
+                            one enclosed newspaper clipping.</p>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <extent>
+                                    <measure type="composition" unit="leaf" quantity="2">2
+                                        leaves</measure>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc hands="1">
+                            <handNote xml:id="wc_hand" medium="pen">Willa Cather
+                                handwritten</handNote>
+                        </handDesc>
+                        <accMat>
+                            <note type="envelope">Includes one envelope, handwritten.</note>
+                            <note type="enclosure">Includes one enclosed newspaper clipping,
+                                entitled "Roosevelt Ends Cruise Tonight at Campobello." Cather has
+                                drawn brackets around a section which mentions that Roosevelt was in
+                                Grand Manan. </note>
+                        </accMat>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate when="1936-08-12">August 12 [1936]</origDate>
+                            <origPlace>
+                                <placeName target="geo:0082">Grand Manan, NB, Canada</placeName>
+                            </origPlace>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <hyphenation eol="some">
+                    <p>End-of-line hyphenation silently removed where appropriate.</p>
+                </hyphenation>
+                <normalization method="markup">
+                    <p>Typographical or spelling irregularities in the orginal have been noted using
+                        markup. Over-typed characters, where the typist has re-keyed the proper
+                        character over the top of a mis-typed character, have not been noted in the
+                        markup.</p>
+                </normalization>
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="psn" matchPattern="([0-9]{4})"
+                    replacementPattern="cat.let.personography.xml#$1">
+                    <p> Private URIs using the <code>psn</code> prefix are pointers to
+                            <gi>person</gi> elements in the cat.let.personography.xml file. For
+                        example, <code>psn:2365</code> dereferences to
+                            <code>cat.let.personography.xml#2365</code>. </p>
+                </prefixDef>
+                <prefixDef ident="wrk" matchPattern="([0-9]{4})"
+                    replacementPattern="cat.let.works.xml#$1">
+                    <p> Private URIs using the <code>wrk</code> prefix are pointers to <gi>bibl</gi>
+                        elements in the cat.let.works.xml file. For example, <code>wrk:1342</code>
+                        dereferences to <code>cat.let.works.xml#1342</code>. </p>
+                </prefixDef>
+                <prefixDef ident="geo" matchPattern="([0-9]{4})"
+                    replacementPattern="cat.let.gazetteer.xml#$1">
+                    <p> Private URIs using the <code>geo</code> prefix are pointers to
+                            <gi>place</gi> elements in the cat.let.gazetteer.xml file. For example,
+                            <code>geo:0023</code> dereferences to
+                            <code>cat.let.gazetteer.xml#0023</code>. </p>
+                </prefixDef>
+                <prefixDef ident="rep" matchPattern="([0-9]{4})"
+                    replacementPattern="cat.let.repositories.xml#$1">
+                    <p> Private URIs using the <code>rep</code> prefix are pointers to
+                            <gi>repository</gi> elements in the cat.let.repositories.xml file. For
+                        example, <code>rep:1020</code> dereferences to
+                            <code>cat.let.repositories.xml#1020</code>. </p>
+                </prefixDef>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2015-10-05" who="#ca_be">first round of xml revision</change>
+            <change when="2015-04-13" who="#em_ra">Initial creation of XML from non-XML electronic
+                files</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <graphic url="cat.let2340.001"/>
+        </surface>
+        <surface>
+            <graphic url="cat.let2340.002"/>
+        </surface>
+        <surface>
+            <graphic url="cat.let2340.003"/>
+        </surface>
+        <surface type="enclosure">
+            <graphic url="cat.let2340.004"/>
+        </surface>
+        <surface type="envelope">
+            <graphic url="cat.let2340.005"/>
+        </surface>
+    </facsimile>
+    <text>
+        <group>
+            <text type="envelope">
+                <body>
+                    <div type="front" facs="cat.let2340.005">
+                        <ab><emph rend="underline">Air Mail</emph></ab>
+                        <div type="addressee">
+                            <ab>
+                                <address>
+                                    <addrLine>
+                                        <persName target="psn:0185 psn:0197">The Misses
+                                            Cather</persName>
+                                    </addrLine>
+                                    <addrLine>1225 South Centre Street</addrLine>
+                                    <addrLine>
+                                        <placeName target="geo:0041">Casper</placeName>
+                                    </addrLine>
+                                    <addrLine><region>Wyoming</region></addrLine>
+                                    <addrLine><emph rend="underline">U. S. A.</emph></addrLine>
+                                </address>
+                            </ab>
+                        </div>
+                        <div type="postmark">
+                            <ab>
+                                <placeName target="geo:0082">NORTH HEAD, N. B.</placeName>
+                                <date when="1936-08-10">AU 10 36</date>
+                                <time>AM</time>
+                            </ab>
+                        </div>
+                    </div>
+                </body>
+            </text>
+            <text>
+                <body>
+                    <pb facs="cat.let2340.001"/>
+                    <fw type="letterhead" place="top">⬩W⬩S⬩C⬩</fw>
+                    <opener>
+                        <dateline>
+                            <date when="1936-08-12">August 12<hi rend="superscript"><emph
+                                        rend="double_underline">th</emph></hi></date>
+                        </dateline>
+                        <salute>My Darling <persName target="psn:0185 psn:0197"
+                            >Twinnies;</persName></salute>
+                    </opener>
+                    <p>My <ref type="annotation" target="007019">rose</ref> is a curtain of bloom,
+                        from root to tip, and the <ref type="annotation" target="007018"
+                            >hollyhocks</ref> are going strong. Now the golden rod on the edge of
+                        the cliffs waves against a purple sea, all the way up to the High Place.
+                        Last week the moon rose further and further north every night, first over
+                        the tip of fishhead, and finally right in front of our door—came up out of
+                        the water like a battered old copper kettle as it grew more and more
+                        lop–sided. It made such a bright, narrow path right to the foot of our cliff
+                        that one was tempted to walk across it. The weather has been wonderful—blue
+                        and gold every day, with good rains at night.</p>
+                    <pb facs="cat.let2340.002"/>
+                    <p> Our lawn is very green now, and the monkshood makes a violet hedge against
+                            <ref type="annotation" target="001460">the gray house</ref>. It is so
+                        mild now, the weather, that we can sit out in our steamer chairs after
+                        dinner. The fire places have not been lit for a week. <persName
+                            target="psn:0078">Mrs. Beal</persName> &amp; <persName target="psn:0079"
+                            >Ralph</persName> are here cleaning house today, and I am now writing in
+                        the attic. <persName target="psn:0560">We</persName> read the proofs of the
+                            <name target="wrk:0289">new book</name> last week.</p>
+                    <p> On Saturday we walked to Bright Angels, but <ref type="annotation"
+                            target="001462">no sweet twin did follow.</ref> We both miss you very
+                        much and often wish you were here. On Friday <persName target="psn:0135"
+                            >Miss Bromhall</persName> came for tea. She and <persName
+                            target="psn:1119">Miss Jordan</persName> and <persName target="psn:1689"
+                            >Miss Gissing</persName> and many others wish to be remembered to
+                        you—they also miss you. You must both come here again, my dears, before you
+                        do any desperate thing like getting <pb facs="cat.let2340.003"/>
+                        <fw type="letterhead" place="top">⬩W⬩S⬩C⬩</fw> married. If we all three wish
+                        it, we can make it come true. Next time it must be in August, when all the
+                        flowers are out, and the water warms enough to bathe in, and the whales due
+                        to arrive. The morning you left we got up early and waited on the shore, but
+                        we couldn't even see the boat. I wish <persName target="psn:0200">your
+                            father</persName> and <persName target="psn:0199">mother</persName>
+                        could have come on by airplane and dropped down on us while you were here.
+                        Perhaps they can, next time, and we can go to <ref type="annotation"
+                            target="001457">the Wolves</ref> and out to <ref type="annotation"
+                            target="001463">Gannet Light</ref>. Tomorrow we go to <ref
+                            type="annotation" target="001459">Southern Head</ref> if it is fine, and
+                        I shall remember the happy day we had there with you. </p>
+                    <p>A world of love to you, my dears.</p>
+                    <closer>
+                        <salute>from your</salute>
+                        <signed>Aunt Willie</signed>
+                    </closer>
+                </body>
+            </text>
+        </group>
+    </text>
+</TEI>
