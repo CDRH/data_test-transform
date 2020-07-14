@@ -11,6 +11,7 @@ default:
 
   data_base: https://cdrhmedia.unl.edu  # (do not include /data/ in path)
   media_base: https://cdrhmedia.unl.edu
+  tei_html_xsl: scripts/overrides/data-tei.xsl
 
   # refer to the documentation for details about overriding the XSL
   # html_html_xsl:
@@ -21,6 +22,13 @@ default:
     site_url: override_in_public
     image_large: 800
     image_thumb: 150
+
+data-tei:
+  tei_html_xsl: scripts/overrides/data-tei.xsl
+
+data-tei-wrap:
+  tei_html_xsl: scripts/overrides/data-tei-wrap.xsl
+
 
 development:
   es_index: edit_public_config
