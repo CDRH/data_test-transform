@@ -81,3 +81,8 @@
   font-weight: 800;
 }
 
+/* Test */
+
+.selected {
+  background-color: red;
+}

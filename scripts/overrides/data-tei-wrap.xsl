@@ -14,6 +14,7 @@
       <head>
         <title><!-- todo: add title --></title>
         <link rel="stylesheet" href="../../../scripts/assets/style.css"/>
+        <link rel="stylesheet" href="../../../scripts/assets/script.js"/>
       </head>
       <body>
         <xsl:apply-templates/>
