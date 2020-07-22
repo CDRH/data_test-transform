@@ -21,3 +21,6 @@ config/private.yml
 /output/data-tei-wrap/*
 !/output/data-tei-wrap/html
 
+.sass-cache
+!/.sass-cache
+
